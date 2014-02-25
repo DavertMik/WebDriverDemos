@@ -3,11 +3,53 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7ec066027fddfcf7b724e7c9be616f6b",
+    "hash": "be88c73ec11f260a876b320a515e4b00",
     "packages": [
 
     ],
     "packages-dev": [
+        {
+            "name": "element-34/php-webdriver",
+            "version": "v1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Element-34/php-webdriver.git",
+                "reference": "78245f11984bb75a1c3eed8df169d6b5e2445095"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Element-34/php-webdriver/zipball/78245f11984bb75a1c3eed8df169d6b5e2445095",
+                "reference": "78245f11984bb75a1c3eed8df169d6b5e2445095",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "PHPWebDriver",
+                    "test",
+                    "www"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Goucher",
+                    "email": "adam@element34.ca",
+                    "role": "lead"
+                }
+            ],
+            "description": "Thin php client for webdriver",
+            "homepage": "https://github.com/Element-34/php-webdriver",
+            "keywords": [
+                "php",
+                "selenium",
+                "webdriver"
+            ],
+            "time": "2013-08-22 01:01:34"
+        },
         {
             "name": "facebook/webdriver",
             "version": "v0.4",
@@ -47,6 +89,67 @@
                 "webdriver"
             ],
             "time": "2014-02-21 18:22:11"
+        },
+        {
+            "name": "instaclick/php-webdriver",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/instaclick/php-webdriver.git",
+                "reference": "2a5d9f443f082e6e2de4cb375b7429f512fa48a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/2a5d9f443f082e6e2de4cb375b7429f512fa48a3",
+                "reference": "2a5d9f443f082e6e2de4cb375b7429f512fa48a3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "bin": [
+                "bin/webunit"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "WebDriver": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Bishop",
+                    "email": "jubishop@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anthon Pang",
+                    "email": "apang@softwaredevelopment.ca",
+                    "role": "Fork Maintainer"
+                }
+            ],
+            "description": "PHP WebDriver for Selenium 2",
+            "homepage": "http://instaclick.com/",
+            "keywords": [
+                "browser",
+                "selenium",
+                "webdriver",
+                "webtest"
+            ],
+            "time": "2014-02-05 18:57:30"
         },
         {
             "name": "phpunit/php-code-coverage",

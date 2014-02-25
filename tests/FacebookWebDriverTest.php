@@ -40,7 +40,7 @@ class FacebookWebDriverTest extends PHPUnit_Framework_TestCase {
 
         $this->wd->findElement(WebDriverBy::name('search'))->click();
 
-        $result = $this->wd->findElement(WebDriverBy::id('ts_res'));
+        $result = $this->trains();
 
         (new WebDriverWait($this->wd, 20))
             ->until(WebDriverExpectedCondition::visibilityOf($result));
@@ -56,16 +56,22 @@ class FacebookWebDriverTest extends PHPUnit_Framework_TestCase {
         $this->assertContains($train, $popup->findElement(WebDriverBy::className('vToolsPopupHeader'))->getText());
     }
 
+    protected function trains()
+    {
+        $result = $this->wd->findElement(WebDriverBy::id('ts_res'));
+        return $result->findElement(WebDriverBy::tagName('tbody'));
+    }
+
     protected function firstTrainId(WebDriverElement $result)
     {
-        $trains = $result->findElements(WebDriverBy::className('vToolsDataTableRow2'));
+        $trains = $result->findElements(WebDriverBy::tagName('tr'));
         $this->assertNotEmpty($trains);
         return  $trains[0]->findElement(WebDriverBy::className('num'))->getText();
     }
 
     protected function openCheapestPlaceForFirstTrain(WebDriverElement $result)
     {
-        $trains = $result->findElements(WebDriverBy::className('vToolsDataTableRow2'));
+        $trains = $result->findElements(WebDriverBy::tagName('tr'));
         $place = $trains[0]->findElement(WebDriverBy::className('place'));
         $places = $place->findElements(WebDriverBy::tagName('div'));
         $this->assertNotEmpty($places);

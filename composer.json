@@ -1,6 +1,8 @@
 {
     "require-dev": {
         "facebook/webdriver": "*",
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "*",
+        "instaclick/php-webdriver": "*",
+        "element-34/php-webdriver": "*",
     }
 }
