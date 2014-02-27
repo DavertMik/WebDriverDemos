@@ -7,6 +7,9 @@ Comparison of different WebDriver APIs in PHP
 * Instaclick/php-webdriver
 * Facebook/php-webdriver
 
+We wrote the same testcase using each of this clients.
+So you can compare the code and make your conclusions.
+
 ## What is testing?
 
 We are using site of Ukrainian railroad ticket booking <http://booking.uz.gov.ua/>.
