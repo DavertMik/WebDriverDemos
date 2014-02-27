@@ -4,5 +4,6 @@
         "phpunit/phpunit": "*",
         "instaclick/php-webdriver": "*",
         "element-34/php-webdriver": "*",
+        "phpunit/phpunit-selenium": ">=1.2.12"
     }
 }
