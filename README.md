@@ -26,3 +26,6 @@ It was chosen because it has lots of ajax (so we use explicit waits).
 * check that there is a popup with train name.
 * we assert that popup contains train name
 
+## Credits
+
+Tests developed by **@DavertMik** and **@Blackakula**
