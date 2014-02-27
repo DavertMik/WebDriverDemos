@@ -26,6 +26,25 @@ It was chosen because it has lots of ajax (so we use explicit waits).
 * check that there is a popup with train name.
 * we assert that popup contains train name
 
+## Usage
+
+1. Clone this repo
+2. Install [Composer](http://packagist.org)
+3. Run `php composer.phar install`
+4. Download and start latest Selenium server
+5. Execute tests one by one with PHPUnit
+
+```
+vendor/bin/phpunit tests/Element34WebDriverTest.php
+vendor/bin/phpunit tests/FacebookWebDriverTest.php
+vendor/bin/phpunit tests/InstaclickWebDriverTest.php
+vendor/bin/phpunit tests/PHPUnitSelenium2Test.php
+```
+
+
+
+
+
 ## Credits
 
 Tests developed by **@DavertMik** and **@Blackakula**
